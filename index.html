@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domicilios Mercayap</title>
-    <link rel="stylesheet" href="styles/uno.css">
+    <link rel="stylesheet" href="styles/estilo.css">
 </head>
 
 <body>
-    <!--<p class="estPedido">Estado pedido</p>-->
+
     <div class="flex-container">
         <a class="flex-item" href="#">Estado pedido</a>
     </div>
-    <img class="img1" src="images/or1.png" alt="logo compañia">
-    <p class="ask-city">En que ciudad estas?</p>
+    <img class="img1 centrar" src="images/or1.png" alt="logo compañia">
+    <h4 class="subtitle centrar">En que ciudad estas?</h4>
 
     <form class="form" action="#">
         <select id="ciudad" class="form-select" name="" id="" aria-placeholder="Selecciona" autofocus>
@@ -26,6 +26,45 @@
             <option value="sabaneta">Sabaneta</option>
         </select>
     </form>
+
+    <p id="elemento1" class="subtitle centrar noshow">Cuál es tu barrio?</p>
+
+    <form id="elemento2" class="form noshow" action="#">
+        <select id="ciudad" class="form-select" name="" id="" aria-placeholder="Selecciona" autofocus>
+            <option disabled selected>Selecciona</option>
+            <option value="cabañas">barrio1</option>
+            <option value="perez">barrio2</option>
+            <option value="barrio nuevo">barrio3</option>
+            <option value="rincon Santo">barrio4</option>
+            <option value="niquia">barrio5</option>
+        </select>
+    </form>
+
+    <p class="subtitle centrar noshow">Ingresa tu direccion</p>
+    <div id="elemento3" class="direccion noshow">
+        <form class="form1" action="#">
+            <div class="cuadro">
+                <select  class="nomenclatura form1-select" name="" id="" placeholder="Selecciona" autofocus>
+                    <option disabled selected>Selecciona</option>
+                    <option value="cabañas">Calle</option>
+                    <option value="perez">Carrera</option>
+                    <option value="barrio nuevo">Diagonal</option>
+                    <option value="rincon Santo">Transversal</option>
+                    <option value="niquia">circular</option>
+                </select>
+                <input type="text" class="form1-input1 " placeholder="No">
+                #
+                <input type="text" class="form1-input2 " placeholder="No">
+                -
+                <input type="number" class="form1-input2" placeholder="No">
+            </div>
+        </form>
+    </div>
+    <input id="elemento4" class="comentario noshow" type="text" placeholder="detalle vivienda (casa, apto,nombre unidad)">
+
+    <div id="elemento5" class="flex-container2 noshow">
+        <a class="flex-container2-a" href="#" class="prueba">Validar cobertura</a>
+    </div>  
 
     <script src="script/scripts.js"></script>
 </body>

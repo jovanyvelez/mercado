@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-item {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(50deg, rgb(238, 34, 34), rgb(40, 40, 199));
+    font-size: 20px;
+    width: 150px;
+    height: 32px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
+
+}
+
+
+
+.flex-item:hover {
+    background: linear-gradient(30deg, rgb(40, 40, 199), rgb(238, 34, 34), );
+    scale: 0.9;
+}
+
+.img1 {
+    display: block;
+    clear: both;
+    max-width: 100%;
+}
+
+.subtitle {
+    width: max-content;
+    height: 30px;
+    font-weight: bold;
+}
+
+.form {
+
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-select {
+    display: block;
+    width: 400px;
+}
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.direccion {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nomenclatura {
+    width: 100px;
+    ;
+}
+
+.form1-input1,
+.form1-input2 {
+    width: 40px;
+
+}
+
+.cuadro {
+    border: 1px solid gray;
+    width: 400px;
+}
+
+.comentario {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 390px;
+
+}
+
+.validar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container2-a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(194, 40, 40);
+    font-size: 20px;
+    width: 385px;
+    height: 12px;
+    padding: 20px;
+    color: white;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
+}
+
+.flex-container2-a:hover{
+    scale: 0.9;
+}
+
+.noshow{
+    visibility: hidden;
+}
