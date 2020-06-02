@@ -21,10 +21,7 @@
     border-radius: 20px;
     margin-top: 25px;
     box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
-
 }
-
-
 
 .flex-item:hover {
     background: linear-gradient(30deg, rgb(40, 40, 199), rgb(238, 34, 34), );
@@ -44,7 +41,6 @@
 }
 
 .form {
-
     width: max-content;
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +58,6 @@
     margin-bottom: 15px;
 }
 
-
 .direccion {
     text-align: center;
     display: flex;
@@ -74,10 +69,8 @@
     ;
 }
 
-.form1-input1,
-.form1-input2 {
+.form1-input1, .form1-input2 {
     width: 40px;
-
 }
 
 .cuadro {
@@ -86,13 +79,11 @@
 }
 
 .comentario {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     width: 390px;
-
 }
 
 .validar {
@@ -120,10 +111,78 @@
     box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
 }
 
-.flex-container2-a:hover{
+.flex-container2-a:hover {
     scale: 0.9;
 }
 
-.noshow{
+.noshow {
     visibility: hidden;
+}
+
+.form-principal {
+    transition: .5s;
+}
+
+.estadoPedidos {
+    background-color: transparent;
+    
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: bolder;
+
+}
+
+.formEstadoPedidos {
+    position:relative;
+    margin: 6% auto;
+    width: 40%;
+
+}
+
+.form-label{
+    display: inline-block;
+    margin-bottom: 3px solid gray;
+    font-size: 35px;
+}
+
+.cerrar {
+    display: inline-block;
+    float: right;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+.cerrar:hover{
+    color: black;
+    scale: 1.1;
+}
+
+.formEstadoPedidos-input{
+    display: block;
+    margin: 10px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.formEstadoPedido-Enviar{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(246, 73, 73);
+    font-size: 15px;
+    height: 20px;
+    padding: 20px;
+    color: white;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px 5px rgb(216, 203, 2 03);
+}
+
+.mover{
+    position:abolute;
+    left: 50px;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
