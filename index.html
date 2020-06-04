@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domicilios Mercayap</title>
-    <link rel="stylesheet" href="styles/estilo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/test.css">
 </head>
 
 <body id="documento">
+    <div class="main-form" id="main-form">
 
-    <div id="form-principal" class="form-principal">
-        <div class="flex-container">
-            <a id="btn-pedido" class="flex-item" href="#">Estado pedido</a>
+        <div class="container-rightbutton container">
+            <div><a id="btn-estadoPedido" class="btn-estadoPedido" href="#">Estado pedido</a>
+            </div>
         </div>
+
         <img class="img1 centrar" src="images/or1.png" alt="logo compañia">
+
         <h4 class="subtitle centrar">En que ciudad estas?</h4>
 
-        <form class="form" action="#">
-            <select id="ciudad" class="form-select" name="" id="" aria-placeholder="Selecciona" autofocus>
+        <div class="container-form">
+            <form action="#" class="">
+                <select name="ciudad" class="alinear" id="ciudad">
+                    <option disabled selected>Selecciona</option>
+                    <option value="bello">Bello</option>
+                    <option value="envigado">Envigado</option>
+                    <option value="itagui">Itagui</option>
+                    <option value="medellin">Medellín</option>
+                    <option value="sabaneta">Sabaneta</option>
+                </select>
+            </form>
+        </div>
+        <p id="labelBarrio" class="subtitle centrar noshow">Cuál es tu barrio?</p>
+
+        <form class="container-form noshow" id="barrios" action="#">
+            <select id="ciudad" class="alinear" name="" id="" aria-placeholder="Selecciona" autofocus>
                 <option disabled selected>Selecciona</option>
                 <option value="bello">Bello</option>
                 <option value="envigado">Envigado</option>
@@ -28,65 +45,55 @@
             </select>
         </form>
 
-        <p id="elemento1" class="subtitle centrar noshow">Cuál es tu barrio?</p>
+        <p class="subtitle centrar noshow" id="labelAddress">Ingresa tu direccion</p>
 
-        <form id="elemento2" class="form noshow" action="#">
-            <select id="ciudad" class="form-select" name="" id="" aria-placeholder="Selecciona" autofocus>
-                <option disabled selected>Selecciona</option>
-                <option value="cabañas">barrio1</option>
-                <option value="perez">barrio2</option>
-                <option value="barrio nuevo">barrio3</option>
-                <option value="rincon Santo">barrio4</option>
-                <option value="niquia">barrio5</option>
-            </select>
-        </form>
-
-        <p class="subtitle centrar noshow">Ingresa tu direccion</p>
-        <div id="elemento3" class="direccion noshow">
+        <div id="address" class="container-form noshow">
             <form class="form1" action="#">
                 <div class="cuadro">
-                    <select class="nomenclatura form1-select" name="" id="" placeholder="Selecciona" autofocus>
-                        <option disabled selected>Selecciona</option>
-                        <option value="cabañas">Calle</option>
-                        <option value="perez">Carrera</option>
-                        <option value="barrio nuevo">Diagonal</option>
-                        <option value="rincon Santo">Transversal</option>
-                        <option value="niquia">circular</option>
+                    <select class="alinear-direccion" name="" id="" placeholder="Selecciona" autofocus>
+                        <option value="calle">Calle</option>
+                        <option value="carrera">Carrera</option>
+                        <option value="Diagonal">Diagonal</option>
+                        <option value="Transversal">Transversal</option>
+                        <option value="circular">circular</option>
                     </select>
-                    <input type="text" class="form1-input1 " placeholder="No">
+                    <input type="text" class="alinear-direccion" placeholder="No">
                     #
-                    <input type="text" class="form1-input2 " placeholder="No">
+                    <input type="text" class="alinear-direccion" placeholder="No">
                     -
-                    <input type="number" class="form1-input2" placeholder="No">
+                    <input type="number" class="alinear-direccion" placeholder="No">
                 </div>
             </form>
         </div>
-        <input id="elemento4" class="comentario noshow" type="text"
-            placeholder="detalle vivienda (casa, apto,nombre unidad)">
 
-        <div id="elemento5" class="flex-container2 noshow">
-            <a class="flex-container2-a" href="#" class="prueba">Validar cobertura</a>
+        <div id="text-info" class="container-form noshow">
+            <input id="elemento4" class="alinear" type="text" placeholder="detalle vivienda (casa, apto,nombre unidad)">
         </div>
 
+        <div id="cobertura" class="container-form noshow">
+            <a class="btn-cobertura" href="#" class="prueba">Validar cobertura</a>
+        </div>
 
     </div>
-    <div class="estadoPedidos noshow" id="pedidos">
-        <div class="formEstadoPedidos">
+
+
+    <div class="estadoPedidos container-form noshow" id="pedidos">
+        <div class="formEstadoPedidos" id="formEstadoPedidos">
             <form action="#" class="form-pedido" id="form-pedido">
                 <label for="" class="form-label">Estado del pedido</label>
                 <a id="btn-cerrar" class="cerrar" href="#">X</a>
                 <hr>
-                <span>Los datos fueron enviados a tu correo electrónico</span>
+                <span>El estado de tu pedido está en tu e-mail</span>
                 <input type="number" class="formEstadoPedidos-input" minlength="2" maxlength="8"
-                    placeholder="Numero de orden" required>
+                    placeholder="# de orden" required>
                 <input type="number" class="formEstadoPedidos-input" minlength="2" maxlength="8"
-                    placeholder="Numero de telefono" required>
+                    placeholder="# telefono" required>
                 <hr>
-                <a href="#" class="formEstadoPedido-Enviar">Ver estado</a>
+                <a href="#" id="btn-cerra" class="formEstadoPedido-Enviar">Ver estado</a>
             </form>
         </div>
     </div>
-    <script src="script/scripts.js"></script>
+    <script src="script/test.js"></script>
 </body>
 
 </html>

@@ -1,37 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
+.container {
+    display: flex;
 }
 
-.flex-container {
-    display: flex;
+.container-rightbutton {
+    margin-top: 35px;
+    margin-bottom: 50px;
     justify-content: flex-end;
 }
 
-.flex-item {
-    display: block;
-    text-decoration: none;
-    text-align: center;
+.btn-estadoPedido {
     background: linear-gradient(50deg, rgb(238, 34, 34), rgb(40, 40, 199));
-    font-size: 20px;
+    text-align: center;
+    font-size: 14px;
     width: 150px;
-    height: 32px;
+    height: 15px;
     padding: 20px;
-    color: white;
     border-radius: 20px;
-    margin-top: 25px;
+    margin-right: 15px;
     box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
+    text-decoration: none;
+    color: white;
 }
 
-.flex-item:hover {
-    background: linear-gradient(30deg, rgb(40, 40, 199), rgb(238, 34, 34), );
-    scale: 0.9;
+.btn-estadoPedido:hover {
+    background: linear-gradient(30deg, rgb(40, 40, 199), rgb(238, 34, 34));
+    color: black;
 }
 
 .img1 {
     display: block;
-    clear: both;
-    max-width: 100%;
+    max-width: 70%;
+}
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .subtitle {
@@ -44,106 +49,89 @@
     width: max-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
-.form-select {
-    display: block;
-    width: 400px;
+.address {
+    flex-direction: row;
+    background-color: blueviolet;
+    align-items: stretch;
 }
 
-.centrar {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.direccion {
+.alinear {
+    width: 350px;
     text-align: center;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.container-form {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.nomenclatura {
-    width: 100px;
-    ;
+.alinear-direccion {
+    width: 50px;
+    background-color: transparent;
 }
 
-.form1-input1, .form1-input2 {
-    width: 40px;
-}
-
-.cuadro {
-    border: 1px solid gray;
-    width: 400px;
-}
-
-.comentario {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    width: 390px;
-}
-
-.validar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.flex-container2 {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container2-a {
-    display: block;
+.btn-cobertura {
     text-decoration: none;
     text-align: center;
     background: rgb(194, 40, 40);
     font-size: 20px;
-    width: 385px;
-    height: 12px;
+    width: 320px;
+    height: 10px;
     padding: 20px;
     color: white;
     margin-top: 25px;
     box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
 }
 
-.flex-container2-a:hover {
-    scale: 0.9;
+.btn-cobertura:hover{
+    scale: .9;
+    color: black;
+    font-weight: bold;
 }
 
-.noshow {
-    visibility: hidden;
-}
-
-.form-principal {
-    transition: .5s;
-}
-
-.estadoPedidos {
-    background-color: transparent;
+.estadoPedidos { 
     
-    transition: 0.5s;
-    font-size: 17px;
-    font-weight: bolder;
-
+    flex-direction: column;
 }
 
 .formEstadoPedidos {
-    position:relative;
-    margin: 6% auto;
-    width: 40%;
+
+    width: 60%;
 
 }
 
-.form-label{
-    display: inline-block;
-    margin-bottom: 3px solid gray;
-    font-size: 35px;
+.formEstadoPedidos-input{
+    display: block;
+    margin: 10px;
+    height: 20px;
+    width: 60%;
+    font-size: 12px;
 }
+
+.formEstadoPedidos-input::placeholder{
+
+    font-size: 12px;
+}
+
+.formEstadoPedido-Enviar{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(246, 73, 73);
+    font-size: 15px;
+    height: 20px;
+    padding: 20px;
+    color: white;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px 5px rgb(216, 203, 203);
+}
+
 
 .cerrar {
     display: inline-block;
@@ -159,30 +147,12 @@
     scale: 1.1;
 }
 
-.formEstadoPedidos-input{
-    display: block;
-    margin: 10px;
-    height: 30px;
-    font-size: 30px;
-}
-
-.formEstadoPedido-Enviar{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background: rgb(246, 73, 73);
-    font-size: 15px;
-    height: 20px;
-    padding: 20px;
-    color: white;
-    margin-top: 25px;
-    box-shadow: 10px 10px 5px 5px rgb(216, 203, 2 03);
+.noshow {
+    visibility: hidden;
 }
 
 .mover{
-    position:abolute;
-    left: 50px;
-    top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    scale: .9;
+    transition: 0.5s;
+    margin: 6% auto; 
 }
